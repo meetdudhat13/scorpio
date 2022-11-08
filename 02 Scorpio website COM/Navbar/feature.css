@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Spline+Sans+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  background-color: #dcdcdd;
+  font-family: "Lato", sans-serif;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.nav-logo {
+  margin: 10px 20px;
+  width: 10%;
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: center;
+}
+.menu {
+  display: none;
+}
+.nav-logo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  cursor: pointer;
+}
+.nav-text {
+  background-color: #4c5c68;
+  padding: 20px 50px;
+  margin: 30px;
+  width: 100%;
+  text-align: right;
+  border-radius: 40px;
+}
+.nav-text a {
+  padding: 10px 20px;
+  margin: 20px;
+  text-decoration: none;
+  background-color: transparent;
+  color: #c5c3c6;
+}
+.nav-text a:hover {
+  background-color: black;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+.row-1 {
+  margin: 40px 280px;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+}
+.row-1 p {
+  font-size: 10px;
+  color: #4c5c68;
+}
+.row-1 h1 {
+  font-size: 50px;
+  font-weight: 900;
+}
+.row-1 h6 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.feature label {
+  margin-left: 10px;
+  font-weight: 900;
+  font-size: 22px;
+}
+
+.hour {
+  display: grid;
+  grid-area: hour;
+  border: 2px solid #46494c;
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  padding: 10px;
+  width: 100%;
+}
+.hour img {
+  margin: 10px 180px 100px 10px;
+}
+.help {
+  grid-area: hp;
+  display: grid;
+  border: 2px solid #46494c;
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  padding: 10px;
+  width: 100%;
+}
+.help img {
+  margin: 10px 180px 100px 10px;
+}
+.thunder {
+  grid-area: thunder;
+  display: grid;
+  border: 2px solid #46494c;
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  padding: 10px;
+  width: 100%;
+}
+.thunder img {
+  margin: 10px 180px 100px 10px;
+}
+.secure {
+  grid-area: secure;
+  display: grid;
+  border: 2px solid #46494c;
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  padding: 10px;
+  width: 100%;
+}
+.secure img {
+  margin: 10px 180px 100px 10px;
+}
+
+.feature {
+  padding: 40px 0;
+  justify-content: center;
+  column-gap: 10px;
+  display: grid;
+  grid-template-areas: "hour hp thunder secure";
+}
+.feature img {
+  width: 20px;
+}
+.feature div {
+  transition: 0.3s;
+}
+.feature div:hover {
+  background-color: #c5c3c6;
+  cursor: pointer;
+}
+.row-2 {
+  display: flex;
+  justify-content: center;
+  width: 98%;
+}
+.row-2 img {
+}
+.social {
+  width: 10%;
+}
+.social img {
+  width: 100%;
+}
+.row-2 a:hover {
+  background-color: #1985a1;
+}
+
+.footer label:hover {
+  color: #ffffff;
+}
+label {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: -25px;
+  cursor: pointer;
+  margin-top: -25px;
+  padding-bottom: 70px;
+}
+.footer {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  align-self: flex-end;
+  background-color: #46494c;
+}
+.footer-text {
+  display: flex;
+  justify-content: space-around;
+}
+.footer-text-0 {
+  display: flex;
+}
+.foot-text {
+  display: grid;
+}
+.buy {
+  grid-area: buy;
+}
+.buy p {
+  cursor: pointer;
+}
+.sell {
+  grid-area: sell;
+}
+.sell p {
+  cursor: pointer;
+}
+.hours {
+  grid-area: hours;
+}
+.services {
+  grid-area: services;
+}
+.services p {
+  cursor: pointer;
+}
+.others {
+  grid-area: others;
+}
+.others p {
+  cursor: pointer;
+}
+
+.footer-container {
+  margin-bottom: 20px;
+  display: grid;
+  width: 100%;
+  column-gap: 110px;
+  justify-content: center;
+  grid-template-areas:
+    "buy buy buy sell sell sell hours hours hours"
+    "buy buy buy sell sell sell hours hours hours"
+    "buy buy buy sell sell sell hours hours hours"
+    "services services services others others others hours hours hours"
+    "services services services others others others hours hours hours"
+    "services services services others others others hours hours hours";
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+}
+.s-white{
+  margin: 0 175px 0 175px;
+  display: flex;
+}
+.s-white-image{
+  width: 50%;
+  /* background-color: #0054a9; */
+  padding: 20px;
+}
+.s-white-image img{
+  width: 100%;
+  border-radius: 20px;
+}
+.s-white-text{
+  display: grid;
+  grid-template-areas: 
+  "m01 m1"
+  "m02 m2"
+  "m03 m3"
+  "m04 m4"
+  "m05 m5"
+  "m06 m6"
+  "m06 m6";
+  grid-template-rows: 25px 25px 25px 25px 25px 25px 25px;
+  background-color: #ffffff8a;
+  width: 50%;
+  border: 3px solid #4c5c68;
+  border-radius: 20px;
+  margin: 20px 0;
+
+}
+.s-white-text h3{
+  margin: 90px 30px;
+  font-size: 14px;
+  text-align: right;
+}
+.s-white-text h4{
+  margin: 90px 30px;
+  font-size: 12px;
+  text-align: left;
+}
+.model01{grid-area: m01;}
+.model1{grid-area: m1;}
+.model02{grid-area: m02;}
+.model2{grid-area: m2;}
+.model03{grid-area: m03;}
+.model3{grid-area: m3;}
+.model04{grid-area: m04;}
+.model4{grid-area: m4;}
+.model05{grid-area: m05;}
+.model5{grid-area: m5;}
+.model06{grid-area: m06;}
+.model6{grid-area: m6;}
+
+
+
+
+
+
+
+
+
+
+

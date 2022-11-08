@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Spline+Sans+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  background-color: #dcdcdd;
+  font-family: "Lato", sans-serif;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.nav-logo {
+  margin: 10px 20px;
+  width: 10%;
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: center;
+}
+.menu {
+  display: none;
+}
+.nav-logo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 500px;
+  cursor: pointer;
+}
+.nav-text {
+  background-color: #4c5c68;
+  padding: 20px 50px;
+  margin: 30px;
+  width: 100%;
+  text-align: right;
+  border-radius: 40px;
+}
+.nav-text a {
+  padding: 10px 20px;
+  margin: 20px;
+  text-decoration: none;
+  background-color: transparent;
+  color: #c5c3c6;
+}
+.nav-text a:hover {
+  background-color: black;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+.main {
+  /* background-color: aqua; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.form-full {
+  /* background-color: blue; */
+  width: 80%;
+  margin: 20px;
+  border: 2px solid #46494c;
+  background-color: #c5c3c6;
+  box-shadow: 3px 3px 8px #46494c;
+  border-radius: 20px;
+}
+.form-head {
+  /* background-color: blueviolet; */
+  padding: 20px;
+  text-align: center;
+  color:#2d2e2f;
+}
+.heading {
+  font-size: 25px;
+  text-align: center;
+  /* background-color: brown; */
+}
+.form {
+  display: block;
+}
+.form p{
+  color:#2d2e2f;
+}
+.name-fild {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "name name"
+    "tb1 tb2";
+  margin: 0 20px;
+}
+.name {
+  grid-area: name;
+  margin: 5px 50px 0 40px;
+  /* background-color: cadetblue; */
+  font-size: 22px;
+}
+
+.text-box1 {
+  grid-area: tb1;
+  margin: 15px 0px 15px 40px;
+  width: 90%;
+  /* background-color: rgb(60, 210, 5); */
+}
+.text-box1 input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+.text-box2 {
+  grid-area: tb2;
+  margin: 15px 0px;
+  width: 90%;
+  /* background-color: rgb(210, 5, 114); */
+}
+.text-box2 input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+.name-fild1 {
+  display: grid;
+  grid-template-areas:
+    "number email"
+    "tb3 tb4";
+}
+.number {
+  grid-area: number;
+  margin: 5px 20px 0 60px;
+  /* background-color: cadetblue; */
+  font-size: 22px;
+}
+.text-box3 {
+  grid-area: tb3;
+  margin: 15px 0px 15px 60px;
+  width: 91%;
+  /* background-color: rgb(60, 210, 5); */
+}
+.text-box3 input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+.email {
+  grid-area: email;
+  margin: 5px 30px 0 30px;
+  /* background-color: cadetblue; */
+  font-size: 22px;
+}
+.text-box4 {
+  grid-area: tb4;
+  margin: 15px 0px 15px 26px;
+  width: 89%;
+  /* background-color: rgb(210, 5, 125); */
+}
+.text-box4 input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+.address {
+  grid-area: address;
+  margin: 5px 20px 0 60px;
+  /* background-color: cadetblue; */
+  font-size: 22px;
+}
+.name-fild4 {
+  display: grid;
+  grid-template-areas:
+    "city state"
+    "tb5 tb6"
+    "code code"
+    "tb3 tb3";
+}
+.city {
+  grid-area: city;
+  margin: 5px 20px 0 60px;
+  /* background-color: cadetblue; */
+  font-size: 22px;
+}
+.text-box5 {
+  grid-area: tb5;
+  margin: 15px 0px 15px 60px;
+  width: 91%;
+  /* background-color: rgb(60, 210, 5); */
+}
+.text-box5 input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+.state {
+  grid-area: state;
+  margin: 5px 30px 0 30px;
+  /* background-color: cadetblue; */
+  font-size: 22px;
+}
+.text-box6 {
+  grid-area: tb6;
+  margin: 15px 0px 15px 26px;
+  width: 89%;
+  /* background-color: rgb(210, 5, 125); */
+}
+.text-box6 input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+.code {
+  grid-area: code;
+  margin: 5px 20px 0 60px;
+  /* background-color: cadetblue; */
+  font-size: 22px;
+}
+.name-fild5{
+  display: flex;
+  margin: 10px -40px;
+}
+.name-fild5 div{
+  margin: 0 170px 0 100px;
+}
+.name-fild5 div input{
+  
+  margin: 15px 2px;
+ 
+}
+.radio0{
+  /* grid-area: radio0; */
+  display: block;
+}
+.radio1{
+  /* grid-area: radio1; */
+  display: block;
+}
+.apointment {
+  grid-area: ap;
+  margin: 5px 20px 0 60px;
+  /* background-color: cadetblue; */
+  font-size: 22px;
+}
+.text-box7 {
+  grid-area: tb7;
+  margin: 15px 0px 15px 60px;
+  width: 89%;
+  /* background-color: rgb(210, 5, 125); */
+}
+.text-box7 input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+.text-box8 {
+  grid-area: tb8;
+  margin: 15px 0px 15px 25px;
+  width: 91%;
+  /* background-color: rgb(210, 5, 125); */
+}
+.text-box8 input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+.name-fild6{
+  display: grid;
+  grid-template-areas: 'ap ap'
+  'tb7 tb8';  
+}
+.btn{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  margin: 20px;
+}
+.btn input{
+  padding: 20px 80px;
+  font-size: 20px;
+  background-color: #4c5c68;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+.btn input:hover{
+  background-color: #1985a1;
+}
+input{
+  border: none;
+  box-shadow: 3px 3px 8px rgb(70, 70, 70);
+}
+input:hover{
+  border: none;
+  background-color: #e8e8e8;
+}
+input[type="radio"]{
+  box-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.row-2 {
+  display: flex;
+  justify-content: center;
+  width: 98%;
+}
+.row-2 img {
+}
+.social {
+  width: 10%;
+}
+.social img {
+  width: 100%;
+}
+.row-2 a:hover {
+  background-color: #1985a1;
+}
+
+.footer label:hover {
+  color: #ffffff;
+}
+label {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: -25px;
+  cursor: pointer;
+  margin-top: -25px;
+  padding-bottom: 70px;
+}
+.footer {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  align-self: flex-end;
+  background-color: #46494c;
+}
+.footer-text {
+  display: flex;
+  justify-content: space-around;
+}
+.footer-text-0 {
+  display: flex;
+}
+.foot-text {
+  display: grid;
+}
+.buy {
+  grid-area: buy;
+}
+.buy p {
+  cursor: pointer;
+}
+.sell {
+  grid-area: sell;
+}
+.sell p {
+  cursor: pointer;
+}
+.hours {
+  grid-area: hours;
+}
+.services {
+  grid-area: services;
+}
+.services p {
+  cursor: pointer;
+}
+.others {
+  grid-area: others;
+}
+.others p {
+  cursor: pointer;
+}
+
+.footer-container {
+  margin-bottom: 20px;
+  display: grid;
+  width: 100%;
+  column-gap: 110px;
+  justify-content: center;
+  grid-template-areas:
+    "buy buy buy sell sell sell hours hours hours"
+    "buy buy buy sell sell sell hours hours hours"
+    "buy buy buy sell sell sell hours hours hours"
+    "services services services others others others hours hours hours"
+    "services services services others others others hours hours hours"
+    "services services services others others others hours hours hours";
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+}
